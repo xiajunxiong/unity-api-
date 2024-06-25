@@ -11,7 +11,7 @@ public class player : MonoBehaviour
 {
     public ISTATE currentState;
     //创建状态字典
-    public Dictionary<PlayerState,currentState> stateDic = new Dictionary<PlayerState, currentState>();
+    public Dictionary<PlayerState,ISTATE> stateDic = new Dictionary<PlayerState, ISTATE>();
     void Start(){
         //添加状态
         stateDic.Add(PlayerState.Idle,new Player_Idle(this));
